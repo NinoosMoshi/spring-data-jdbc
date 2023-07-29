@@ -1,0 +1,13 @@
+
+CREATE SCHEMA IF NOT EXISTS jdbc_db;
+
+
+USE jdbc_db;
+
+DROP TABLE IF EXISTS Employees;
+
+CREATE TABLE Employees(
+    id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name  VARCHAR(50) NOT NULL
+)
