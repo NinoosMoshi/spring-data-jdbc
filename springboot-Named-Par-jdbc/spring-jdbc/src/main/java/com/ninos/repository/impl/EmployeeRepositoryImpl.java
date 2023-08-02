@@ -2,6 +2,7 @@ package com.ninos.repository.impl;
 
 import lombok.AllArgsConstructor;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -34,8 +35,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
 
     @Override
     public int count() {
-//        return jdbc.queryForObject(COUNT_EMPLOYEE_QUERY, Integer.class);
-        return 0;
+        return jdbc.queryForObject(COUNT_EMPLOYEE_QUERY, new HashMap<>(), Integer.class);
     }
 
 
